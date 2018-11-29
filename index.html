@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
 
@@ -11,22 +11,59 @@
 </head>
 
 <body>
+    <div id="blur-img"></div>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2304" height="963" id="blurred_iiibqrzh5" class="blured-img" viewBox="0 0 2304 963" preserveAspectRatio="none"><filter id="blur_iiibqrzh5"><feGaussianBlur in="SourceGraphic" stdDeviation="50"></feGaussianBlur></filter><image x="0" y="0" width="2304" height="963" externalResourcesRequired="true" xlink:href="" style="filter:url(#blur_iiibqrzh5)" preserveAspectRatio="none"></image></svg> -->
+    <div class="blur-mask" style="display: block;"></div>
     <div class="container">
-        <div class="left-side"></div>
+      <audio src="http://link.hhtjim.com/163/28285910.mp3" id="music"></audio>
+        <div class="left-side">
+          <span class="header">♫ FoxMusic</span>
+          <div class="library">
+            <span>LIBRARY</span>
+            <div class="library">
+              <span id="Playlists"></span>
+              <span>Playlists</span>
+            </div>
+            <div class="library">
+              <span id="Artists"></span>
+              <span>Artists</span>
+            </div>
+            <div class="library">
+              <span id="Albums"></span>
+              <span>Albums</span>
+            </div>
+            <div class="library">
+              <span id="Songs"></span>
+              <span>Songs</span>
+            </div>
+          </div>
+        </div>
+
         <div class="right-side"></div>
         <div class="foot-bar">
             <div class="music-img"></div>
-            <div class="music-title">Home</div>
+            <span class="music-title">Home</span>
             <!-- <div class="control "></div> -->
             <div class="control prev"></div>
             <div class="control play" id="play"></div>
             <div class="control next"></div>
+
             <div class="music-progress">
                 <div class="music-played">
                 </div>
             </div>
-            <div class="control vol"></div>
 
+            <div class="control vol" id="vol"></div>
+
+            <div class="vol-progress">
+              <div class="vol-voled">
+              </div>
+            </div>
+
+            <div id="time">
+					     <span id="current-time">0:00</span>
+					     <span id="total-time"></span>
+				    </div>
         </div>
     </div>
 
